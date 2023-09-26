@@ -1,18 +1,24 @@
 *{
     margin: 0;
     padding: 0;
-   
+    transition: all 300ms ease;
 }
 
 
 section{
     height: 70vh;
-    background: linear-gradient(454deg, #1f2833, #c5c6c7)/* Odd Slide Color */
+    background-image: url("assets/DarkBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background: linear-gradient(454deg, #1f2833, #c5c6c7)/* Odd Slide Color */
 }
 section:nth-of-type(even){
-    background: linear-gradient(1deg, #66fcf1, #1f2833) /* Even Slide Color */
+    background-image: url("assets/BlueBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background: linear-gradient(1deg, #66fcf1, #1f2833) /* Even Slide Color */
 }
-
+/* Ruleset for Navigation */
 .navigation{
    width: 1%;
     position: fixed;
@@ -22,8 +28,6 @@ section:nth-of-type(even){
     display: flex;
     flex-direction: column;
     gap: 40px;
-    
-    
     
     
 }
@@ -42,7 +46,7 @@ section:nth-of-type(even){
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #1f2833;
+    background: #ebebeb;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -62,7 +66,7 @@ section:nth-of-type(even){
     padding: 2px 16px;
     text-transform: uppercase;
     pointer-events: none;
-    box-shadow: 0 7px 15px -6px rgba(0,0,0,0.8);
+    box-shadow: 0 7px 15px -6px rgba(46, 46, 46, 0.8);
     opacity: 0;
     transition: all 400ms ease;
 }
@@ -71,7 +75,7 @@ section:nth-of-type(even){
     transform: translate(0, -50%);
 }
 
- 
+ /* Def Rules for Everything inside the Container per Slide */
 .container{
     width: 100%;
     height: 100vh;
@@ -80,77 +84,13 @@ section:nth-of-type(even){
     scroll-snap-type: y mandatory;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    
-  
-}
-.MyName{
-    position: relative;
-    bottom: 26em;
-    right: 2.3em;
 }
 .container::-webkit-scrollbar {
     display: none;
 }
-
-/* Buttons */
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    overflow: hidden;
-  }
-  
-  .btn {
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
-    overflow: hidden;
-  }
-  
-  .btn-color-1,
-  .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
-    overflow: hidden;
-  }
-  
-  .btn-color-1:hover,
-  .btn-color-2:hover {
-    cursor: pointer;
-    overflow: hidden;
-  }
-  
-  .btn-color-1,
-  .btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
-    overflow: hidden;
-  }
-  
-  .btn-color-1:hover {
-    background: rgb(0, 0, 0);
-    overflow: hidden;
-  }
-  
-  .btn-color-2 {
-    background: none;
-  }
-  
-  .btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
-    overflow: hidden;
-  }
-  
-  .btn-container {
-    gap: 1rem;
-    overflow: hidden;
-  }
-
 .slides{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -162,54 +102,281 @@ section:nth-of-type(even){
     scroll-snap-align: start;
    
 }
+/* Page 1 Elements */
 
-.home img{
-    width: 300px;
-    height: 350px;
+.Page1Header{
+    position: relative;
+    bottom: 38em;
+    right: 36em;
+    
 }
+.Page1Header p{
+    font-size: 40px;
+    font-family: 'Dela Gothic One', cursive;
+}
+.Page1Text0{
+  position: relative;
+  transition: all 300ms ease;
+  bottom: 20em;
+  left: 31.5em;
+}
+.Page1Text0 p{
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 55px;
+}
+.Page1Text1{
+    position: relative;
+    transition: all 300ms ease;
+    bottom: 20em;
+    left: 21em;
+    
+}
+.Page1Text1 p{
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 55px;
+}
+.Page1Text2 p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+.Page1Text2{
+    position: relative;
+    transition: all 300ms ease;
+    bottom: 20em;
+    left: 23em;
+}
+.home img{
+    position:relative;
+    top: 15em;
+    right: 30em;
+    width: 700px;
+    height: 700px;
+
+}
+
+/* Buttons For whole webpage, to make buttons uniform */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+    
+  }
+  
+  .btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    position:relative;
+    left: 32em;
+    bottom: 23em;
+    color: rgb(250, 197, 50);
+    }
+  
+  .btn-color-1,
+  .btn-color-2,.PlatzDodgeClick,.OrderClick,.SnekClick {
+    border: rgb(250, 219, 128) 0.1rem solid;
+    overflow: hidden;
+  }
+  
+  .btn-color-1:hover,
+  .btn-color-2:hover,.PlatzDodgeClick,.OrderClick {
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .btn-color-1,.SnekClick,
+  .btn-color-2:hover {
+    background: rgb(65, 64, 64);
+    color: white;
+    overflow: hidden;
+  }
+  
+  .btn-color-1, .PlatzDodgeClick:hover,.OrderClick:hover,.SnekClick:hover {
+    background: rgb(80, 78, 78);
+    overflow: hidden;
+  }
+  
+  .btn-color-2,.PlatzDodgeClick,.OrderClick {
+    background: none;
+  }
+  
+  .btn-color-2,.SnekClick:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+    overflow: hidden;
+  }
+  
+  .btn-container {
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+/* Personal Background Slide */
+
+.Page2Header{
+  position: relative;
+  bottom: 25em;
+  right: -2em;
+  font-family: 'Dela Gothic One', cursive;
+  white-space: nowrap;
+}
+.Page2Header p{
+  font-size: 40px;
+  color:#fcc766;
+}
+
+.Yokaii{
+  width: 500px;
+  height: 700px;
+  position: relative;
+  right:18em;
+}
+
+
+/* Containers for Both Experiences and Knowledge in Programming/The Likes*/
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(26, 57, 99);
+  font-family: 'Dela Gothic One', cursive;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0rem;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #fcb666;
+}
+
+.experience-details-container {
+   position:relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  right: 20em;
+}
+
+.article-container h3{
+  color:#fcc766;
+}
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+  border-radius: 25px;
+  background-color: rgb(33, 67, 68);
+  border:2px solid rgb(248, 244, 237);
+}
+.article-container img{
+  height:24px;
+  width:24px;
+
+}
+
+article {
+  display: flex;
+  width: 8rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  position: relative;
+}
+
+/* Projects Slide */
+
+.Page3Header{
+  position: relative;
+  bottom: 25em;
+  right: 43em;
+  font-family: 'Dela Gothic One', cursive;
+}
+.Page3Header p{
+  font-size: 40px;
+}
+#2ndSlide {
+  position: relative;
+ 
+}
+.project-articles img{
+  height: 200px;
+}
+.SnekClick{
+  position: relative;
+  bottom: 10em;
+
+}
+.PlatzDodgeClick{
+  position: relative;
+  bottom: 10em;
+
+}
+.OrderClick{
+  position: relative;
+  bottom: 10em;
+
+}
+#Project-1{
+  position:relative;
+  top:250px;
+  right: 750px;
+}
+#Project-2{
+  position:relative;
+  top:200px;
+  right: 860px;
+}
+#Project-3{
+  position:relative;
+  top:150px;
+  right:770px;
+}
+
+#ProjectDesc{
+  position:relative;
+  left: 5em;
+  bottom: 10em;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 40px;
+  white-space: nowrap;
+}
+
 
 /* Contact Slide */ 
-#contact {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;
-  }
-.slide3 img{
-    width: 150px;
-    height: 100px;
+
+.Page4Header{
+  position: relative;
+  bottom: 25em;
+  right: 38em;
+  
 }
-  .contact-info-upper-container {
-    display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: rgb(163, 163, 163) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-    margin: 2rem;
-    padding: 0.5rem;
-  }
-  
-  .contact-info-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem;
-  }
-  
-  .contact-info-container p {
-    font-size: larger;
-  }
-  
-  .contact-icon {
-    cursor: default;
-  }
-  
-  .email-icon {
-    height: 2.5rem;
-  }
-  
-  
+.Page4Header p{
+  font-size: 40px;
+  font-family: 'Dela Gothic One', cursive;
+  color:#fcc766;
+}
+.Page4Text{
+  position:relative;
+  bottom:2em;
+  left: 9.8em;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 60px;
+}
 
 
+.contact-info-container{
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  right: 25em;
+  
+}
