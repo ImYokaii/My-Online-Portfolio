@@ -1,122 +1,495 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
+@media only screen and (min-width: 1280px) and (max-width:1919px ) {
+
+    /* Page 1 Elements */
+.Page1Header{
+    position: relative;
+    bottom: 35.5em;
+    right: 20em;
+}
+.Page1Text0{
+    position: relative;
+    transition: all 300ms ease;
+    bottom: 20em;
+    left: 31.5em;
+  }
+  .Page1Text0 p{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 55px;
+  }
+  .Page1Text1{
+      position: relative;
+      transition: all 300ms ease;
+      bottom: 20em;
+      left: 21em;
+      
+  }
+  .Page1Text1 p{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 55px;
+  }
+  .Page1Text2 p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+  }
+  .Page1Text2{
+      position: relative;
+      transition: all 300ms ease;
+      bottom: 20em;
+      left: 23em;
+  }
+  .home img{
+      position:relative;
+      top: 14em;
+      right: 20em;
+      width: 700px;
+      height: 700px;
+
   
-    .about-containers {
-      flex-wrap: wrap;
-    }
+    
+  }
+  /* Page 2 Elements */
+  .Page2Header{
+    position: relative;
+    bottom: 23em;
+    left: 4em;
+    font-family: 'Dela Gothic One', cursive;
+    white-space: nowrap;
+  }
+  .Page2Header p{
+    font-size: 40px;
+    color:#fcc766;
   }
   
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
+  .Yokaii{
+    width: 500px;
+    height: 700px;
+    position: relative;
+    right:18em;
+  }
+
+  /*Page 3 Elements */
+  .Page3Header{
+    position: relative;
+    bottom: 22.5em;
+    right: 27em;
+    font-family: 'Dela Gothic One', cursive;
+  }
+  #ProjectDesc{
+    position:relative;
+    left: 4em;
+    bottom: 12em;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 35px;
+    white-space: nowrap;
+  }
+
+    #Project-1{
+    position:relative;
+    top:210px;
+    right: 600px;
     }
-  
-    #hamburger-nav {
-      display: flex;
+    #Project-2{
+    position:relative;
+    top:170px;
+    right: 710px;
     }
-  
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
+    #Project-3{
+    position:relative;
+    top:120px;
+    right:620px;
     }
-  
-    #profile,
-    .section-container {
-      display: block;
-    }
-  
-    .arrow {
-      display: none;
-    }
-  
-    section,
-    .section-container {
-      height: fit-content;
-    }
-  
-    section {
-      margin: 0 6%;
-    }
-  
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-  
-    .about-containers {
-      margin-top: 0;
-    }
+
+    /* Page 4 Elements */
+    .Page4Header{
+        position: relative;
+        bottom: 23em;
+        right: 21em;
+        text-wrap:nowrap;
+        
+      }
+      
+
+}
+/* Tablet Display */
+@media only screen and (min-width: 600px) and (max-width:1279px ) {
+
+    /* Page 1 Elements */
+.Page1Header{
+    position: relative;
+    bottom: 34em;
+    right: 10em;
+}
+.Page1Text0{
+    position: relative;
+    transition: all 300ms ease;
+    bottom: 15em;
+    left: 23.5em;
+  }
+  .Page1Text0 p{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 30px;
+  }
+  .Page1Text1{
+      position: relative;
+      transition: all 300ms ease;
+      bottom: 15em;
+      left: 18.8em;
+      
+  }
+  .Page1Text1 p{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 25px;
+  }
+  .Page1Text2 p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+  }
+  .Page1Text2{
+      position: relative;
+      transition: all 300ms ease;
+      bottom: 15em;
+      left: 19em;
+  }
+  .home img{
+      position:relative;
+      top: 10em;
+      right: 8em;
+      width: 500px;
+      height: 500px;
+  }
+  .btn {
+    bottom:18em;
+    left:20em;
+  }
+  /* Page 2 Elements */
+  .Page2Header{
+    position: relative;
+    bottom: 23em;
+    left: 4em;
+    font-family: 'Dela Gothic One', cursive;
+    white-space: nowrap;
+  }
+  .Page2Header p{
+    font-size: 40px;
+    color:#fcc766;
   }
   
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
+  .Yokaii{
+    display: none;
+  }
+  .experience-sub-title {
+    color: rgb(26, 57, 99);
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #fcb666;
+  }
+
+
+
+  .article-container img{
+    height:45px;
+    width:45px;
   
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
+  }
+  .article-container h3{
+    font-size: x-large;
+  }
+
+  /*Page 3 Elements */
+  .Page3Header{
+    position: relative;
+    bottom: 22.5em;
+    right: 11em;
+    font-family: 'Dela Gothic One', cursive;
+  }
+  #ProjectDesc{
+    position:relative;
+    left: 0em;
+    bottom: 16em;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 25px;
+    white-space: nowrap;
+  }
+
+    #Project-1{
+    position:relative;
+    top:180px;
+    right: 360px;
     }
-  
-    article {
-      font-size: 1rem;
+    #Project-2{
+    position:relative;
+    top:130px;
+    right: 470px;
     }
-  
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
+    #Project-3{
+    position:relative;
+    top:80px;
+    right:380px;
     }
-  
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-  
-    .contact-info-container {
-      margin: 0;
-    }
-  
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-  
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-  
-    .logo {
-      font-size: 1.5rem;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-  
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-  
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-  
-    .title {
-      font-size: 2rem;
-    }
-  
-    .text-container {
-      text-align: justify;
-    }
+
+    /* Page 4 Elements */
+    .Page4Header{
+        position: relative;
+        bottom: 23em;
+        right: 13em;
+        text-wrap:nowrap;
+        
+      }
+      .contact-info-container{
+        display: flex;
+        justify-content: space-between;
+        position:relative;
+        right: 20em;
+        flex-wrap: wrap;
+        
+      }
+      .Page4Text{
+        position:relative;
+        bottom:0.1em;
+        left: 9.5em;
+        font-family: 'Dela Gothic One', cursive;
+        font-size: 60px;
+      }
+
+}
+
+/* Mobile Screen Display */
+@media only screen and (min-width: 51px) and (max-width:851px ){
+    
+    /* Page 1 Elements */
+.Page1Header{
+    position: relative;
+    bottom: 34em;
+    left: 5em;
+}
+.Page1Header p{
+    font-size: x-large;
+}
+.Page1Text0{
+    position: relative;
+    transition: all 300ms ease;
+    bottom: 32em;
+    left: 15.5em;
+  }
+  .Page1Text0 p{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 30px;
+  }
+  .Page1Text1{
+      position: relative;
+      transition: all 300ms ease;
+      bottom: 32em;
+      left: 10.8em;
+      
+  }
+  .Page1Text1 p{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 25px;
+  }
+  .Page1Text2 p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+  }
+  .Page1Text2{
+      position: relative;
+      transition: all 300ms ease;
+      bottom: 32em;
+      left: 11em;
+  }
+  .home img{
+      position:relative;
+      top: 12em;
+      right: 5em;
+      width: 500px;
+      height: 500px;
+      
+  }
+  .btn {
+    bottom:38em;
+    left:11em;
+  }
+  /* Page 2 Elements */
+  .Page2Header{
+    position: relative;
+    bottom: 23em;
+    left: 5em;
+    font-family: 'Dela Gothic One', cursive;
+    white-space: nowrap;
+  }
+  .Page2Header p{
+    font-size: 24px;
+    color:#fcc766;
   }
   
+  .Yokaii{
+    display: none;
+  }
+  .experience-sub-title {
+    color: rgb(26, 57, 99);
+    font-family: 'Dela Gothic One', cursive;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #fcb666;
+  }
+
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0rem;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: rgb(33, 67, 68);
+    border:2px solid rgb(248, 244, 237);
+    
+  }
+  .experience-details-container {
+    position:relative;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   right: 12em;
+ }
+
+  .article-container img{
+    height:24px;
+    width:24px;
+  
+  }
+  .article-container h3{
+    font-size: small;
+  }
+
+  /*Page 3 Elements */
+  .Page3Header{
+    position: relative;
+    bottom: 22.5em;
+    left: 2em;
+    font-family: 'Dela Gothic One', cursive;
+    
+    
+  }
+  .Page3Header p{
+    text-wrap: nowrap;
+    font-size: 30px;
+  }
+  #ProjectDesc{
+    display: none;
+    position:relative;
+    left: 0em;
+    bottom: 16em;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 25px;
+    white-space: nowrap;
+  }
+
+    #Project-1{
+    position:relative;
+    top:450px;
+    right: 320px;
+    }
+    #Project-2{
+    position:relative;
+    top:500px;
+    right: 320px;
+    }
+    #Project-3{
+    position:relative;
+    top:550px;
+    right:320px;
+    }
+    #Project-1 img,#Project-2 img,#Project-3 img{
+        display: none;
+    }
+    #Project-1 h3,#Project-2 h3,#Project-3 h3{
+        display: none;
+    }
+
+    /* Page 4 Elements */
+    .Page4Header{
+        position: relative;
+        bottom: 23em;
+        left: 3em;
+        text-wrap:nowrap;
+        
+        
+      }
+      .contact-info-container{
+        display: flex;
+        justify-content: space-between;
+        position:relative;
+        right: 13em;
+        top: 2em;
+        flex-wrap: wrap;
+        
+      }
+      .Page4Text{
+        display: none;
+        position:relative;
+        bottom:0.1em;
+        left: 9.5em;
+        font-family: 'Dela Gothic One', cursive;
+        font-size: 60px;
+      }
+
+
+}
+/* This Part is for Minor Adjustments for Bugs! */
+
+@media only screen and (min-width: 903px) and (max-width:1200px ) {
+    .Page4Header{
+        position: relative;
+        bottom: 23em;
+        left: 2em;
+        text-wrap:nowrap;
+    }
+    .Page4Text{
+        display: none;
+    }
+    .contact-info-container{
+        display: flex;
+        justify-content: space-between;
+        position:relative;
+        right: 10em;
+        top: 0em;
+        flex-wrap: wrap;
+        
+      }
+    }
+@media only screen and (min-width: 1200px) and (max-width:1300px ) {
+        .Page4Header{
+            position: relative;
+            bottom: 23em;
+            left: 2em;
+            text-wrap:nowrap;
+        }
+        .Page4Text{
+            display: none;
+        }
+        .contact-info-container{
+            display: flex;
+            justify-content: space-between;
+            position:relative;
+            right: 10em;
+            top: 0em;
+            flex-wrap: wrap;
+            
+          }
+
+}
+@media only screen and (min-width: 1280px) and (max-width:1370px ) {
+    .Yokaii{
+        width: 300px;
+        height: 500px;
+        position: relative;
+        right:18em;
+      }
+}
