@@ -264,6 +264,9 @@ section:nth-of-type(even){
 .article-container h3{
   color:#fcc766;
 }
+.article-container p{
+  color:#a8b2eb;
+}
 .article-container {
   display: flex;
   text-align: initial;
@@ -379,4 +382,8 @@ article .icon {
   position:relative;
   right: 25em;
   
+}
+
+footer p{
+  overflow: hidden;
 }
